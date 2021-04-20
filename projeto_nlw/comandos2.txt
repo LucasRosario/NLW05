@@ -1,0 +1,9 @@
+yarn add 
+  typeorm 
+  reflect-metada 
+  sqlite3
+
+yarn typeorm 
+  migrations:craeate -n nomedamigration
+  migrations:run // executar o up
+  migrations:revert // executar o down

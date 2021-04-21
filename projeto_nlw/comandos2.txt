@@ -2,6 +2,8 @@ yarn add
   typeorm 
   reflect-metada 
   sqlite3
+  uuid
+  @types/uuid -D
 
 yarn typeorm 
   migrations:craeate -n nomedamigration

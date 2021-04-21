@@ -6,6 +6,6 @@ yarn add
   @types/uuid -D
 
 yarn typeorm 
-  migrations:craeate -n nomedamigration
-  migrations:run // executar o up
-  migrations:revert // executar o down
+  migration:craeate -n nomedamigration
+  migration:run // executar o up
+  migration:revert // executar o down

@@ -1,0 +1,31 @@
+
+comandos aula 2 {
+  yarn add 
+  typeorm 
+  reflect-metada 
+  sqlite3
+  uuid
+  @types/uuid -D
+
+yarn typeorm 
+  migration:craeate -n nomedamigration
+  migration:run // executar o up
+  migration:revert // executar o down
+}
+
+comandos aula 3 {
+  service é a AREA onde fica as regras de negocio.
+
+  yarn typeorm migration:create -n CreateUsers
+  yarn typeorm migration:run
+  yarn typeorm migration:create -n CreateMessages
+}
+comandos aula 4 {
+  yarn add 
+    socket.io
+    socket.io-client
+    @types/socket.io -D
+    ejs   
+  yarn typeorm migration:create -n CreateConnections
+  yarn typeorm migration:run
+}

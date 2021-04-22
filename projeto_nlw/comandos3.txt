@@ -1,5 +1,0 @@
-service é a AREA onde fica as regras de negocio.
-
-yarn typeorm migration:create -n CreateUsers
-yarn typeorm migration:run
-yarn typeorm migration:create -n CreateMessages

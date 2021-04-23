@@ -8,7 +8,7 @@ interface ISettingsCreate {
   username: string;
 }
 class SettingsService {
-  private settingsRepository: SettingsRepository;
+  private settingsRepository: Repository<Setting>;
 
   constructor(){
     this.settingsRepository = getCustomRepository(SettingsRepository);
@@ -47,7 +47,7 @@ class SettingsService {
       .createQueryBuilder()
       .update(Setting)
       .set({ chat })
-      .where('username = :username', {
+      .where("username = :username", {
         username
       })
       .execute();

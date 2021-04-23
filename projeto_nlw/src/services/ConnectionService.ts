@@ -28,6 +28,14 @@ async create({ socket_id, user_id, admin_id, id}: IConnectionCreate){
 
   return connection;
 }
+
+async findByUserId(user_id: string){
+  const connection = await this.connectionRepository.findOne({
+    user_id
+  });
+
+  return connection;
+}
 }
 
 export { ConnectionService}
